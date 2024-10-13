@@ -1,5 +1,14 @@
 @import url('stylenull.css');
 
+/* common */
+.container {
+	max-width: 1140px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 /* Mobile version */
 
 /* Header */
@@ -26,12 +35,62 @@
 }
 
 /* Main */
-.hero {
-	text-align: center;
+.hero-overlay{
+	background-color: rgba(47, 48, 58, .4);
 }
 
-@media screen and (min-width: 480px) {
+/* Базовые стили для 1x изображение */
+.hero-box {
+	width: 480px;
+	height: 400px;
+	background-image: url('../images/Hero_480\ img_sq.jpg');
+	background-size: 480px 400px;
+}
+
+/* Переопределяем путь к 2x изображению
+если плотность экрана как минимум 2 */
+@media (min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi),
+	(min-resolution: 2dppx) {
+		.hero-box {
+			background-image: url('../images/Hero_768\ img@2x_sq.jpg');
+		}
+}
+
+/* Переопределяем путь к 3x изображению
+если плотность экрана как минимум 3 */
+@media (min-device-pixel-ratio: 3),
+	(min-resolution: 192dpi),
+	(min-resolution: 2dppx) {
+		.hero-box {
+			background-image: url('../images/Hero_1600\ img@3x_sq.jpg');
+		}
+}
+
+.hero-title {
+	font-size: 26px;
+	line-height: 1.6;
+	font-weight: 900;
+	color: #ffffff;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 115px;
+	padding-bottom: 20px;
+}
+
+.hero-button {
+	display: block;
+	margin: 0 auto;
+}
+
+@media screen (min-width: 480px) {
 	.container {
 		width: 480px;
 	}
 }
+
+/* @media screen and (min-width: 768px) {
+	.container {
+		width: 768px;
+	}
+} */
