@@ -41,7 +41,7 @@ h5,
 h6,
 p {
 	font-weight: inherit;
-	/* font-size: inherit; */
+	font-size: inherit;
 }
 
 img {
