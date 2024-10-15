@@ -37,6 +37,8 @@
 }
 
 /* Main */
+
+/* Section Hero */
 .hero-overlay{
 	display: flex;
 	background-color: rgba(47, 48, 58, .4);
@@ -105,8 +107,11 @@
 	}
 }
 
-/* @media screen and (min-width: 768px) {
-	.container {
-		width: 768px;
-	}
-} */
+/* Section Our offers */
+.desc-section {
+	margin-top: 60px;
+}
+
+
+
+
