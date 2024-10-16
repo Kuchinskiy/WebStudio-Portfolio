@@ -48,7 +48,10 @@
 .hero-img {
 	width: 480px;
 	height: 400px;
+	padding-right: 0;
+	padding-left: 0;
 	background-image: url('../images/Hero_480\ img_sq.jpg');
+	background-repeat: no-repeat;
 	background-size: 480px 400px;
 }
 
@@ -107,15 +110,22 @@
 	}
 }
 
-/* Section Our offers - description*/
+/* Section Our offers - desc*/
 .desc-section {
 	margin-top: 60px;
+}
+
+.desc-item {
+	margin-top: 30px;
+}
+
+.desc-item:first-child {
+	margin-top: 0;
 }
 
 .desc-box {
 	width: 450px;
 	height: 226px;
-	margin-bottom: 30px;
 }
 
 .desc-icon {
@@ -138,5 +148,8 @@
 	line-height: 1.7;
 	margin-top: 10px;
 }
+
+/* Section Our Team */
+
 
 
