@@ -288,3 +288,14 @@
 	color: #acacb0;
 	padding: 0 38px 0 38px;
 }
+
+.social-box {
+	margin-top: 60px;
+}
+
+.social-subscribe {
+	color: #ffffff;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+}
